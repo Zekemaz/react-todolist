@@ -1,4 +1,6 @@
 import React from 'react';
+import ToDoForm from './Components/ToDoForm';
+import ToDoList from './Components/ToDoList';
 import './App.css';
 
 
@@ -11,6 +13,13 @@ import './App.css';
  * Display todos in a nice Material Design fashion
  * Allow adding todos via input
  * Delete todos
+ * 
+ * 
+ * Create function save ToDo
+ * (Simply merge the existing todos with our new one, 
+ * extra whitespace cut out.)
+ * Add ToDoList props deletetodo with const filter 
+ * and set todos to new value
  * 
  */
 
