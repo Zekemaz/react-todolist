@@ -14,8 +14,27 @@
  */
 
 import React from 'react';
+import {List, ListItem, ListItemText, 
+    ListItemSecondaryAction, IconButton, Checkbox } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete'
 
 
-const ToDoList = () => {}
+const ToDoList = ({ todos, deleteTodo }) => {
+    return(
+        <List className="list">
+            {todos.map((todo, index) => (
+                <ListItem className="listItem" key={index.toString()} dense button>
+                <Checkbox className="checkbox" tabIndex={-1} disableRipple color='secondary' />
+                <ListItemText className="listItemText" primary={todo} />
+                <ListItemSecondaryAction>
+                    <IconButton onClick={() => {deleteTodo(index)}}>
+                        <DeleteIcon />
+                    </IconButton>
+                </ListItemSecondaryAction>
+            </ListItem>
+            ))}
+        </List>
+    )
+}
 
 export default ToDoList
