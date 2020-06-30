@@ -1,9 +1,3 @@
-import React from 'react';
-import ToDoForm from './Components/ToDoForm';
-import ToDoList from './Components/ToDoList';
-import './App.css';
-
-
 /**
  * Clear project
  * Create a Component folder within Src folder
@@ -23,9 +17,34 @@ import './App.css';
  * 
  */
 
+import React, { useState } from 'react';
+import ToDoForm from './Components/ToDoForm';
+import ToDoList from './Components/ToDoList';
+import './App.css';
+
+
 function App() {
+
+  const [todos, setTodos] = useState([]);
+
+  const saveTodo = (todoText) => {
+    const trimmedText = todoText.trim();
+  
+    if(trimmedText.length > 0){
+      setTodos([...todos, trimmedText])
+    }
+  }
+
+  const deleteTodo = (todoIndex) => {
+    const newTodos = todos.filter((_, index) => index !== todoIndex);
+    setTodos(newTodos);
+  }
+
   return (
     <div className="App">
+      <h1>Todo List</h1>
+      <ToDoForm saveTodo={saveTodo}/>
+      <ToDoList todos={todos} deleteTodo={deleteTodo} />
     </div>
   );
 }
