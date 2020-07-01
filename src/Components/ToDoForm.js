@@ -18,7 +18,7 @@
  */
 
 import React, { useState } from 'react';
-import TextField from '@material-ui/core/TextField'
+// import TextField from '@material-ui/core/TextField'
 
 const ToDoForm = ({saveTodo}) => {
 
@@ -42,11 +42,13 @@ const ToDoForm = ({saveTodo}) => {
       
     return(
         <form className="todo-form" onSubmit={onSubmit}>
-            <TextField inputProps={textFieldProps}
+            <input
              value={value} onChange={onChange} variant="outlined" 
-             label="Need to do something?" color="secondary"/>
+             placeholder="Need to do something?" autoFocus={true} maxLength={50} color="secondary"/>
         </form>
     )
 }
 
 export default ToDoForm
+
+

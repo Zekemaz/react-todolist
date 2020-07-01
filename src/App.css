@@ -1,3 +1,10 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e6e8f2;
+}
+
 .App {
   text-align: center;
 }
@@ -40,4 +47,28 @@
 
 .App h1{
 
+}
+
+
+input{
+  width: 15vw;
+  height: 5vh;
+  padding: 1vh 2vw;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background: #e6e8f2;
+  box-shadow:  9px 9px 18px #d4d5df, 
+  -9px -9px 18px #f8fbff;
+}
+
+.MuiListItem-container{
+
+  border-radius: 50px;
+  background: #e6e8f2;
+  box-shadow:  9px 9px 18px #d4d5df, 
+             -9px -9px 18px #f8fbff;
+  margin: 2vw auto;
+  width: 70%;
 }
