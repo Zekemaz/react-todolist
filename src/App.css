@@ -33,7 +33,7 @@ input{
  @media only screen and (max-width: 600px) {
   input{
     width: 200px;
-    height: 7vh;
+    height: 40px;
     padding: 1vw 2vw;
     font-size: 1rem;
     outline: none;
@@ -59,7 +59,7 @@ input{
   @media only screen and (min-width: 600px) {
     input{
       width: 30vw;
-      height: 7vh;
+      height: 40px;
       padding: 1vw 2vw;
       font-size: 1rem;
       outline: none;
@@ -84,7 +84,7 @@ input{
  @media only screen and (min-width: 768px) {
   input{
     width: 30vw;
-    height: 7vh;
+    height: 40px;
     padding: 1vw 2vw;
     font-size: 1rem;
     outline: none;
@@ -109,7 +109,7 @@ input{
  @media only screen and (min-width: 992px) {
   input{
     width: 300px;
-    height: 7vh;
+    height: 40px;
     padding: 10px 20px;
     font-size: 1rem;
     outline: none;
@@ -134,7 +134,7 @@ input{
  @media only screen and (min-width: 1200px) {
   input{
     width: 300px;
-    height: 7vh;
+    height: 40px;
     padding: 10px 20px ;
     font-size: 1rem;
     outline: none;
